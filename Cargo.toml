@@ -1,0 +1,18 @@
+[package]
+name = "dynsix"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.64"
+chrono = "0.4.23"
+env_logger = "0.10.0"
+log = "0.4.17"
+reqwest = { version = "0.11.14", features = ["json", "blocking", "rustls"] }
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.92"
+thiserror = "1.0.38"
+tokio = { version = "1.25.0", features = ["full"] }
+toml = "0.7.0"
