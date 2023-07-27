@@ -1,0 +1,5 @@
+[Unit]
+Description=IPv6 dyndns client
+
+[Service]
+ExecStart=/usr/local/bin/dynsix

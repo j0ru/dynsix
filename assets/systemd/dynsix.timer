@@ -1,0 +1,10 @@
+[Unit]
+Description=15min timer for dynsix
+
+[Timer]
+OnCalendar=*:0/15
+# Introduce some randomization, so not everyone hits the dns provider at the same time
+RandomizedDelaySec=5min
+
+[Install]
+WantedBy=default.timer
